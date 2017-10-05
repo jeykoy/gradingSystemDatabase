@@ -1,3 +1,5 @@
+CREATE DATABASE gradingSystem;
+use gradingSystem;
 CREATE TABLE course(
 	courseID INTEGER AUTO_INCREMENT,
 	courseName VARCHAR(40),

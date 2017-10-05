@@ -7,7 +7,7 @@ IN fn VARCHAR(50),
 BEGIN
 	DECLARE result INTEGER;
     
-    SELECT `courseMaxYears` INTO result FROM `course` WHERE `courseID` = inputCourseID LIMIT 1; /* SELECT THE max year of the input course*/
+    SELECT `courseMaxYears` INTO result FROM `course` WHERE `courseID` = inputCourseID LIMIT 1;
     
     IF (result = 4 AND inYear <=4) THEN
 		INSERT INTO student(`studentFirstName`,`studentMiddleInitial`,`studentLastName`,
